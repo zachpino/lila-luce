@@ -128,12 +128,10 @@ export const handler = async () => {
   .attr("height", qrSize)
   .attr("x", qrX)
   .attr("y", qrY);
-  
-
-  // Serialize it as xml string:
+    
   const svgAsXML = await xmlserializer.serializeToString(svg.node());
 
-  let s = await svg2png({ 
+  const imageUrl = await svg2png({ 
   input: svgAsXML,
   encoding: 'dataURL', 
   format: 'png',
@@ -143,11 +141,10 @@ export const handler = async () => {
   quality: 1
   })
 
-
   return {
     statusCode: 200,
     body: JSON.stringify({
-      message:s
+      image:imageUrl
     }),
   }
 }
