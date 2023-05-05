@@ -1,0 +1,27 @@
+{
+  "name": "lila-luce",
+  "version": "1.0.0",
+  "description": "Learn how to use serverless functions in less than 30 minutes!",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachpino/lila-luce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zachpino/lila-luce/issues"
+  },
+  "homepage": "https://github.com/zachpino/lila-luce#readme",
+  "dependencies": {
+    "d3": "^7.8.4",
+    "jsdom": "^22.0.0",
+    "qrcode": "^1.5.3",
+    "svg-png-converter": "^0.0.9",
+    "xmlserializer": "^0.6.1"
+  }
+}
